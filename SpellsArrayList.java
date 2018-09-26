@@ -1,7 +1,7 @@
 /*
  * Example SpellsArray: a version of the Spells program that
  * uses an ArrayList of Associations, which is developed in class
- *
+ * just testing for lab to change notepad
  * Siena College, CSIS 210, Fall 2017
  */
 
@@ -14,14 +14,14 @@ public class SpellsArrayList {
 
     public static void main(String args[]) throws IOException {
 
-	final int NUM_SPELLS = 10;
+        final int NUM_SPELLS = 10;
+        int test;
         // create an array of the magic spells we know.
         // Note: due to the way Java handles arrays and generic types,
         // we have to leave off the <String,String> in the construction..
         ArrayList<Association<String,String>> spells = new ArrayList<Association<String,String>>();
-	Scanner inFile = new Scanner(new File("spells.txt"));
-	for (int i = 0; i < NUM_SPELLS; i++) {
-	    String spell = inFile.nextLine().trim();
+        Scanner inFile = new Scanner(new File("spells.txt"));
+        for (int i = 0; i < NUM_SPELLS; i++) {
 	    String action = inFile.nextLine().trim();
        
 	    spells.add(new Association<String,String>(spell, action));
